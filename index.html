@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Site Limiter</title>
+  </head>
+  <body>
+    <h1>Site Limiter <img class="logo" src="./images/lock-solid.png" /></h1>
+    <div class="container">
+      <div class="site-div">
+        What sites do you want to limit today?
+        <input id="sites-input" type="text" />
+      </div>
+      <div class="visits-div">
+        How many visits are allowed?
+        <input id="number-input" type="number" min="0" />
+      </div>
+      <div class="buttons">
+        <button id="save-btn">Save</button>
+        <button id="reset-btn">Reset</button>
+      </div>
+    </div>
+    <script src="background.js"></script>
+  </body>
+</html>

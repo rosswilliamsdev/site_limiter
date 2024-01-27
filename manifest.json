@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Site Limiter",
+  "version": "1.0",
+  "description": "Limits visits to specified websites in a day",
+  "permissions": ["storage", "activeTab", "webNavigation"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "icons": {
+    "48": "chrome_extensions/site_limiter/images/shop-lock-solid.png",
+    "128": "chrome_extensions/site_limiter/images/shop-lock-solid.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "48": "chrome_extensions/site_limiter/images/shop-lock-solid.png",
+      "128": "chrome_extensions/site_limiter/images/shop-lock-solid.png"
+    },
+    "default_popup": "index.html"
+  }
+}
